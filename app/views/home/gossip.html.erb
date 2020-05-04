@@ -3,8 +3,8 @@
   <div class="card-deck">
     <div class="col-sm-6">
         <% @all_gossips.each do |gossip| %>
-          <div class="card border-info text-white bg-info mb-3">
-            <div class="card-header bg-light text-warning">
+          <div class="card border-info text-dark bg-light mb-3">
+            <div class="card-header bg-dark text-warning">
               <%= link_to 'Author:', user_show_path(:user_id => gossip.user.id), style: "text-decoration: none" %>
               <%= gossip.user.first_name %> <%= gossip.user.last_name %>
             </div>
