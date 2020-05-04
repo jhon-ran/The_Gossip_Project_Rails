@@ -1,0 +1,8 @@
+<h2>You chose this gossip</h2>
+
+  <p> Gossip # <%= @gossip.id%><br/>
+  Author: <%= @gossip.user.last_name %><br/>
+  Title: <%= @gossip.title %><br/>
+  Date of creation: <%= @gossip.created_at.strftime('%d/%m/%Y') %><br/>
+  Gossip : <%= @gossip.content %>
+  </p>
